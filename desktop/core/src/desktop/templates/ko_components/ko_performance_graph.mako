@@ -34,7 +34,6 @@
 
   <script type="text/html" id="performance-graph-template">
     <div style="position: relative" data-bind="template: { afterRender: componentRendered }">
-      <h3 style="float: left;">${ _('Resources') }</h3>
       <div style="padding-top: 22px; float: right;" data-bind="foreach: availableGranularities"><a class="margin-right-20" href="javascript: void(0);" data-bind="text: label, click: function () { $parent.selectedGranularity($data); }"></a></div>
       <div style="clear: both;" class="performance-graph" data-bind="style: { height: graphHeight + 'px', width: graphWidth + 'px' }"></div>
     </div>
